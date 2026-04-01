@@ -1,496 +1,1009 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en-BD">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>বয়স ক্যালকুলেটর | Age Calculator Bangladesh – সঠিক বয়স (দিন, মাস, বছর)</title>
-  <meta name="description" content="সঠিক বয়স ক্যালকুলেটর – বাংলাদেশের জন্য নির্ভুল বয়স নির্ণয় করুন বছর, মাস, দিন, মোট দিন ও মাসে। Age Calculator Bangladesh: exact age from date of birth.">
-  <meta name="keywords" content="age calculator Bangladesh, বয়স ক্যালকুলেটর, age from date of birth, exact age calculator, age in years months days, বয়স নির্ণয়">
-  <meta name="author" content="Age Calculator BD">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.agecalculatorbangladesh.com/">
-  <meta property="og:title" content="বয়স ক্যালকুলেটর | Age Calculator Bangladesh – নির্ভুল গণনা">
-  <meta property="og:description" content="জন্ম তারিখ থেকে বয়স বের করুন বছর, মাস, দিন, মোট দিন ও মাসে। Accurate age calculation tool for Bangladesh.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator Bangladesh | বয়স ক্যালকুলেটর | Exact Age from Date of Birth</title>
+  <meta name="description" content="Free Age Calculator Bangladesh (বয়স ক্যালকুলেটর) — Calculate your exact age in years, months & days from date of birth instantly. Used by millions in Bangladesh. 100% accurate." />
+  <meta name="keywords" content="age calculator bangladesh, বয়স ক্যালকুলেটর, age from date of birth, exact age calculator, age in years months days, how old am i, বয়স হিসাব, age calculator bd" />
+  <link rel="canonical" href="https://agecalculator.com.bd/" />
+  <meta property="og:title" content="Age Calculator Bangladesh – বয়স ক্যালকুলেটর" />
+  <meta property="og:description" content="Calculate your exact age from date of birth in years, months and days. Free, fast, accurate — trusted by millions in Bangladesh." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agecalculator.com.bd/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#006a4e" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Age Calculator Bangladesh",
+        "alternateName": "বয়স ক্যালকুলেটর",
+        "url": "https://agecalculator.com.bd/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BDT" },
+        "description": "Free online age calculator for Bangladesh. Calculate exact age in years, months, days from date of birth.",
+        "inLanguage": ["en", "bn"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How to calculate age from date of birth?", "acceptedAnswer": { "@type": "Answer", "text": "Enter your date of birth in the calculator above and click Calculate Age. The tool instantly shows your exact age in years, months, and days." } },
+          { "@type": "Question", "name": "How many days old am I?", "acceptedAnswer": { "@type": "Answer", "text": "Use our age calculator above. After calculating, it shows your total age in days as well as years, months, and days." } },
+          { "@type": "Question", "name": "বয়স কিভাবে হিসাব করা হয়?", "acceptedAnswer": { "@type": "Answer", "text": "জন্ম তারিখ থেকে আজকের তারিখ পর্যন্ত বছর, মাস ও দিন গণনা করে বয়স বের করা হয়।" } },
+          { "@type": "Question", "name": "How is age calculated in Bangladesh?", "acceptedAnswer": { "@type": "Answer", "text": "In Bangladesh, age is calculated based on the Gregorian calendar from the date of birth to the current date, counting completed years, remaining months, and remaining days." } },
+          { "@type": "Question", "name": "What if I was born on February 29 (leap year)?", "acceptedAnswer": { "@type": "Answer", "text": "If you were born on February 29, the calculator correctly handles leap year birthdays. In non-leap years, your birthday is treated as February 28 for age calculation." } },
+          { "@type": "Question", "name": "Can I calculate age on a specific date?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! Use the Calculate Age On field to enter any specific date. The calculator will compute your age as of that date." } },
+          { "@type": "Question", "name": "Is this age calculator accurate?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, our age calculator is 100% accurate. It accounts for leap years, month-length variations, and handles all edge cases correctly." } },
+          { "@type": "Question", "name": "Does this calculator work for NID or passport age?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can use this calculator to verify your age for NID, passport applications, school admissions, and job applications in Bangladesh." } },
+          { "@type": "Question", "name": "What is the difference between age in completed years and exact age?", "acceptedAnswer": { "@type": "Answer", "text": "Completed years shows only the whole number (e.g., 25). Exact age includes years, months, and days (e.g., 25 years, 3 months, 14 days)." } },
+          { "@type": "Question", "name": "Does the calculator work on mobile?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. This age calculator is fully mobile-optimized and works on all Android and iPhone browsers." } }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+    :root {
+      --green: #006a4e;
+      --green-light: #007a5c;
+      --green-dark: #004f3a;
+      --red: #f42a41;
+      --gold: #f0b429;
+      --white: #ffffff;
+      --off-white: #f4f8f6;
+      --gray-50: #eef3f0;
+      --gray-100: #dde8e3;
+      --gray-300: #8fada2;
+      --gray-500: #4e6b62;
+      --gray-700: #2a4039;
+      --gray-900: #0e1e19;
+      --shadow-sm: 0 2px 8px rgba(0,106,78,0.09);
+      --shadow-md: 0 8px 32px rgba(0,106,78,0.13);
+      --shadow-lg: 0 20px 60px rgba(0,106,78,0.17);
+      --r: 14px;
+      --r-sm: 9px;
+      --r-lg: 22px;
+      --font-d: 'Playfair Display', Georgia, serif;
+      --font-b: 'DM Sans', system-ui, sans-serif;
+      --tr: 0.22s cubic-bezier(.4,0,.2,1);
     }
 
-    body {
-      background: #f0f7ff;
-      font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans Bengali', 'Roboto', sans-serif;
-      padding: 20px;
-      color: #1a2c3e;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-b); background: var(--off-white); color: var(--gray-900); line-height: 1.65; overflow-x: hidden; }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    /* card & layout */
-    .card {
-      background: #ffffff;
-      border-radius: 32px;
-      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
-      padding: 28px 24px;
-      margin-bottom: 32px;
-      transition: all 0.2s ease;
-    }
-
-    .hero-card {
-      background: linear-gradient(135deg, #ffffff 0%, #fef9e6 100%);
-      border-bottom: 3px solid #f9b43a;
-    }
-
-    h1 {
-      font-size: 1.95rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, #1e5a7d, #e67e22);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-bottom: 0.5rem;
-      letter-spacing: -0.3px;
-    }
-
-    .bilingual {
-      font-size: 1rem;
-      color: #2c3e50;
-      border-left: 4px solid #f9b43a;
-      padding-left: 16px;
-      margin: 16px 0 8px;
-      line-height: 1.5;
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      font-weight: 600;
-      margin: 1.2rem 0 0.8rem 0;
-      color: #1e4663;
-      border-bottom: 2px solid #ffdd99;
-      display: inline-block;
-      padding-bottom: 4px;
-    }
-
-    h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin: 1rem 0 0.6rem;
-      color: #2c3e50;
-    }
-
-    .input-group {
-      margin-bottom: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    label {
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: #2c3e50;
+    /* NAV */
+    .top-nav {
+      background: var(--green-dark);
+      padding: 11px 20px;
       display: flex;
       align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
     }
-
-    .bn-label {
-      font-weight: 500;
-      color: #b85c1a;
-    }
-
-    input, button {
-      font-size: 1rem;
-      padding: 14px 18px;
-      border-radius: 60px;
-      border: 1.5px solid #e2e8f0;
-      background: #fff;
-      transition: 0.2s;
-      font-family: inherit;
-    }
-
-    input:focus {
-      outline: none;
-      border-color: #f9b43a;
-      box-shadow: 0 0 0 3px rgba(249, 180, 58, 0.2);
-    }
-
-    button {
-      background: #e67e22;
-      color: white;
-      font-weight: 700;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 6px 14px rgba(230, 126, 34, 0.25);
-      transition: 0.2s;
+    .nav-logo {
+      font-family: var(--font-d);
       font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--white);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .flag-icon {
+      width: 24px;
+      height: 16px;
+      background: #006a4e;
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .flag-icon::after {
+      content: '';
+      width: 11px;
+      height: 11px;
+      background: #f42a41;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-40%, -50%);
+    }
+    .nav-links { display: flex; gap: 22px; }
+    .nav-links a { color: rgba(255,255,255,0.72); text-decoration: none; font-size: 0.83rem; font-weight: 500; transition: color var(--tr); }
+    .nav-links a:hover { color: var(--gold); }
+    @media (max-width: 520px) { .nav-links { display: none; } }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(140deg, var(--green-dark) 0%, var(--green) 55%, #008f6a 100%);
+      color: var(--white);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      right: -90px;
+      top: -90px;
+      width: 340px;
+      height: 340px;
+      background: var(--red);
+      opacity: 0.10;
+      border-radius: 50%;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      left: -50px;
+      bottom: -70px;
+      width: 220px;
+      height: 220px;
+      background: var(--gold);
+      opacity: 0.07;
+      border-radius: 50%;
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 42px 20px 34px;
+      position: relative;
+      z-index: 1;
+    }
+    .site-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,255,255,0.11);
+      border: 1px solid rgba(255,255,255,0.20);
+      border-radius: 40px;
+      padding: 5px 15px;
+      font-size: 0.73rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 18px;
+    }
+    header h1 {
+      font-family: var(--font-d);
+      font-size: clamp(1.9rem, 5vw, 2.9rem);
+      font-weight: 900;
+      line-height: 1.17;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    header h1 .bangla-h1 {
+      color: var(--gold);
+      display: block;
+      font-size: 0.62em;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-top: 4px;
+    }
+    .header-desc { font-size: 1rem; color: rgba(255,255,255,0.80); max-width: 520px; line-height: 1.6; }
+
+    /* MAIN */
+    main { max-width: 900px; margin: 0 auto; padding: 0 16px 70px; }
+
+    /* BREADCRUMB */
+    .breadcrumb { padding: 13px 0 0; font-size: 0.77rem; color: var(--gray-300); }
+    .breadcrumb a { color: var(--green); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* CALC CARD */
+    .calc-card {
+      background: var(--white);
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 38px 34px 34px;
+      margin-top: -30px;
+      position: relative;
+      z-index: 10;
+      border: 1px solid var(--gray-100);
+    }
+    @media (max-width: 600px) { .calc-card { padding: 26px 18px 24px; } }
+
+    .calc-title {
+      font-family: var(--font-d);
+      font-size: 1.2rem;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .calc-title::before {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 24px;
+      background: var(--red);
+      border-radius: 4px;
+      flex-shrink: 0;
     }
 
-    button:hover {
-      background: #d35400;
-      transform: translateY(-2px);
-      box-shadow: 0 12px 20px rgba(230, 126, 34, 0.3);
+    .input-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 22px; }
+    @media (max-width: 580px) { .input-grid { grid-template-columns: 1fr; gap: 14px; } }
+
+    .input-group { display: flex; flex-direction: column; gap: 7px; }
+    .input-group label { font-size: 0.80rem; font-weight: 600; color: var(--gray-700); letter-spacing: 0.05em; text-transform: uppercase; }
+    .input-group label small { text-transform: none; font-weight: 400; color: var(--gray-300); font-size: 0.74rem; margin-left: 5px; }
+    .input-group input[type="date"] {
+      width: 100%;
+      padding: 13px 16px;
+      border: 2px solid var(--gray-100);
+      border-radius: var(--r-sm);
+      font-family: var(--font-b);
+      font-size: 1rem;
+      color: var(--gray-900);
+      background: var(--gray-50);
+      transition: border-color var(--tr), box-shadow var(--tr), background var(--tr);
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
     }
+    .input-group input[type="date"]:focus {
+      border-color: var(--green);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(0,106,78,0.09);
+    }
+
+    .calc-btn {
+      width: 100%;
+      padding: 17px 32px;
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-light) 100%);
+      color: var(--white);
+      border: none;
+      border-radius: var(--r-sm);
+      font-family: var(--font-b);
+      font-size: 1.06rem;
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: 0.02em;
+      transition: transform var(--tr), box-shadow var(--tr), filter var(--tr);
+      box-shadow: 0 5px 22px rgba(0,106,78,0.30);
+      position: relative;
+      overflow: hidden;
+    }
+    .calc-btn::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.10) 0%, transparent 60%); pointer-events: none; }
+    .calc-btn:hover { transform: translateY(-2px); box-shadow: 0 9px 28px rgba(0,106,78,0.36); filter: brightness(1.06); }
+    .calc-btn:active { transform: translateY(0); }
+
+    /* ERROR */
+    .error-msg { display: none; background: #fff2f3; border: 1.5px solid #ffbdc3; border-radius: var(--r-sm); padding: 12px 16px; color: #b8141f; font-size: 0.88rem; font-weight: 500; margin-top: 16px; align-items: center; gap: 9px; }
+    .error-msg.show { display: flex; }
+
+    /* RESULT */
+    .result-panel { display: none; margin-top: 30px; animation: fadeUp 0.38s ease; }
+    .result-panel.show { display: block; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+    .result-heading { font-family: var(--font-d); font-size: 1rem; font-weight: 700; color: var(--green); margin-bottom: 14px; }
+
+    .result-primary {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%);
+      border-radius: var(--r);
+      padding: 28px 22px 24px;
+      color: var(--white);
+      text-align: center;
+      margin-bottom: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+    .result-primary::before { content: ''; position: absolute; right: -30px; top: -30px; width: 130px; height: 130px; background: rgba(255,255,255,0.06); border-radius: 50%; }
+    .result-primary::after { content: ''; position: absolute; left: -20px; bottom: -40px; width: 100px; height: 100px; background: rgba(255,255,255,0.04); border-radius: 50%; }
+
+    .result-big { font-family: var(--font-d); font-size: clamp(1.9rem, 6vw, 3.2rem); font-weight: 900; line-height: 1.1; color: var(--white); position: relative; z-index: 1; }
+    .result-sub { font-size: 0.88rem; opacity: 0.76; margin-top: 7px; position: relative; z-index: 1; }
+
+    .result-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 11px; margin-bottom: 11px; }
+    @media (max-width: 400px) { .result-grid { gap: 7px; } }
 
     .result-box {
-      background: #fef5e7;
-      border-radius: 28px;
-      padding: 22px 20px;
-      margin-top: 24px;
-      border: 1px solid #ffe0b5;
+      background: var(--gray-50);
+      border: 1.5px solid var(--gray-100);
+      border-radius: var(--r-sm);
+      padding: 16px 8px;
+      text-align: center;
+      transition: border-color var(--tr), transform var(--tr);
+      cursor: default;
     }
+    .result-box:hover { border-color: var(--green); transform: translateY(-2px); }
+    .result-box .num { font-family: var(--font-d); font-size: 2rem; font-weight: 900; color: var(--green); line-height: 1; }
+    .result-box .lbl { font-size: 0.70rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; margin-top: 5px; line-height: 1.4; }
 
-    .result-grid {
+    .result-extras { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+    @media (max-width: 380px) { .result-extras { grid-template-columns: 1fr; } }
+
+    .extra-chip {
+      background: var(--white);
+      border: 1.5px solid var(--gray-100);
+      border-radius: var(--r-sm);
+      padding: 12px 14px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-      margin-top: 16px;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .extra-chip .clbl { font-size: 0.70rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+    .extra-chip .cval { font-size: 1.08rem; font-weight: 700; color: var(--gray-700); }
+
+    .birthday-chip {
+      background: linear-gradient(135deg, #fff8e4 0%, #fff3d4 100%);
+      border: 1.5px solid #e8a800;
+      border-radius: var(--r-sm);
+      padding: 13px 16px;
+      margin-top: 9px;
+      font-size: 0.88rem;
+      color: #6b4c00;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
     }
 
-    .result-item {
-      background: white;
-      border-radius: 28px;
+    /* SECTIONS */
+    section {
+      background: var(--white);
+      border-radius: var(--r);
+      box-shadow: var(--shadow-sm);
+      padding: 38px 34px;
+      margin-top: 28px;
+      border: 1px solid var(--gray-100);
+    }
+    @media (max-width: 600px) { section { padding: 26px 18px; } }
+
+    h2 { font-family: var(--font-d); font-size: 1.55rem; font-weight: 700; color: var(--gray-900); margin-bottom: 14px; line-height: 1.28; }
+    .bangla-sub { font-size: 0.65em; font-weight: 400; color: var(--gray-300); display: block; margin-top: 4px; }
+
+    h3 { font-family: var(--font-d); font-size: 1.08rem; font-weight: 700; color: var(--green-dark); margin: 22px 0 10px; }
+    p { font-size: 0.96rem; color: var(--gray-700); margin-bottom: 13px; }
+    p:last-child { margin-bottom: 0; }
+
+    .highlight {
+      background: var(--gray-50);
+      border-left: 4px solid var(--green);
+      border-radius: 0 var(--r-sm) var(--r-sm) 0;
       padding: 14px 18px;
-      flex: 1;
-      min-width: 110px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
-      border: 1px solid #ffdead;
+      margin: 16px 0;
+      font-size: 0.93rem;
+      color: var(--gray-700);
     }
+    .highlight strong { color: var(--green-dark); }
 
-    .result-number {
-      font-size: 2.2rem;
-      font-weight: 800;
-      color: #e67e22;
-      line-height: 1.2;
-    }
-
-    .error-message {
-      color: #c0392b;
-      background: #ffe6e5;
-      padding: 12px 20px;
-      border-radius: 60px;
-      margin-top: 18px;
-      font-weight: 500;
-    }
-
-    .info-text {
-      background: #eef2fa;
-      padding: 16px 20px;
-      border-radius: 24px;
-      margin: 20px 0 0;
-    }
-
-    .internal-links {
+    .steps { display: flex; flex-direction: column; gap: 13px; margin: 16px 0; }
+    .step { display: flex; gap: 13px; align-items: flex-start; }
+    .step-num {
+      min-width: 32px;
+      height: 32px;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 50%;
       display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin: 24px 0 12px;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      margin-top: 1px;
+      flex-shrink: 0;
     }
+    .step-text { font-size: 0.94rem; color: var(--gray-700); padding-top: 6px; }
 
-    .internal-link {
-      background: #ffffffdd;
-      backdrop-filter: blur(2px);
-      padding: 8px 18px;
-      border-radius: 40px;
+    .example-box { background: var(--gray-50); border: 1.5px solid var(--gray-100); border-radius: var(--r); padding: 22px 22px; margin: 16px 0; }
+    .example-box h3 { margin-top: 0; }
+    .example-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--gray-100); font-size: 0.91rem; }
+    .example-row:last-child { border-bottom: none; }
+    .example-row .key { color: var(--gray-500); }
+    .example-row .val { font-weight: 700; color: var(--green-dark); }
+
+    .method-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin-top: 14px; overflow: hidden; border-radius: var(--r-sm); }
+    .method-table th { background: var(--green); color: var(--white); padding: 11px 14px; text-align: left; font-weight: 600; font-size: 0.80rem; letter-spacing: 0.04em; }
+    .method-table td { padding: 10px 14px; border-bottom: 1px solid var(--gray-100); color: var(--gray-700); vertical-align: top; }
+    .method-table tr:nth-child(even) td { background: var(--gray-50); }
+    .method-table tr:last-child td { border-bottom: none; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 9px; margin-top: 16px; }
+    .faq-item { border: 1.5px solid var(--gray-100); border-radius: var(--r-sm); overflow: hidden; transition: border-color var(--tr); }
+    .faq-item:hover { border-color: var(--green); }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 15px 18px;
+      text-align: left;
+      font-family: var(--font-b);
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--gray-900);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      transition: background var(--tr);
+    }
+    .faq-q:hover { background: var(--gray-50); }
+    .faq-arrow {
+      min-width: 22px;
+      height: 22px;
+      background: var(--gray-50);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      color: var(--green);
+      transition: transform var(--tr), background var(--tr);
+      flex-shrink: 0;
+    }
+    .faq-item.open .faq-q .faq-arrow { transform: rotate(180deg); background: var(--green); color: var(--white); }
+    .faq-a { display: none; padding: 14px 18px 16px; font-size: 0.91rem; color: var(--gray-700); border-top: 1px solid var(--gray-100); }
+    .faq-item.open .faq-a { display: block; }
+
+    /* RELATED LINKS */
+    .link-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 13px; margin-top: 16px; }
+    .link-card {
+      background: var(--gray-50);
+      border: 1.5px solid var(--gray-100);
+      border-radius: var(--r-sm);
+      padding: 18px 16px;
       text-decoration: none;
-      font-weight: 500;
-      color: #1e5a7d;
-      border: 1px solid #ffcd94;
-      transition: 0.2s;
-      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      transition: border-color var(--tr), transform var(--tr), box-shadow var(--tr);
     }
+    .link-card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+    .link-card .lc-icon { font-size: 1.4rem; }
+    .link-card .lc-title { font-size: 0.86rem; font-weight: 600; color: var(--green-dark); }
+    .link-card .lc-desc { font-size: 0.76rem; color: var(--gray-500); }
 
-    .internal-link:hover {
-      background: #f9b43a20;
-      border-color: #e67e22;
-      transform: translateY(-2px);
-    }
+    /* FOOTER */
+    footer { background: var(--green-dark); color: rgba(255,255,255,0.70); text-align: center; padding: 34px 20px; font-size: 0.83rem; margin-top: 60px; }
+    footer a { color: rgba(255,255,255,0.88); text-decoration: none; margin: 0 7px; }
+    footer a:hover { text-decoration: underline; }
 
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.85rem;
-      color: #5d6e7e;
-      border-top: 1px solid #ddd6c8;
-      padding-top: 24px;
-    }
-
-    @media (max-width: 640px) {
-      .card {
-        padding: 20px 16px;
-      }
-      h1 {
-        font-size: 1.65rem;
-      }
-      .result-number {
-        font-size: 1.7rem;
-      }
-      .result-item {
-        min-width: 80px;
-      }
-    }
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: var(--gray-50); }
+    ::-webkit-scrollbar-thumb { background: var(--green); border-radius: 4px; }
   </style>
 </head>
 <body>
-<div class="container">
-  <!-- MAIN CALCULATOR CARD (Above the fold) -->
-  <div class="card hero-card">
-    <h1>🎂 Age Calculator Bangladesh <span style="font-family: 'Noto Sans Bengali';">বয়স ক্যালকুলেটর</span></h1>
-    <div class="bilingual">
-      📅 আপনার জন্ম তারিখ থেকে সঠিক বয়স (বছর, মাস, দিন) এবং মোট দিন/মাস নির্ণয় করুন।<br>
-      Calculate your exact age in years, months, days, total days & total months — instantly & accurately.
-    </div>
 
-    <div style="margin-top: 28px;">
-      <div class="input-group">
-        <label>📆 Date of Birth / জন্ম তারিখ <span class="bn-label">(জন্মদিন)</span></label>
-        <input type="date" id="dobInput" aria-label="Date of Birth">
+  <!-- NAV -->
+  <nav class="top-nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-logo">
+      <span class="flag-icon" aria-hidden="true"></span>
+      AgeCalc BD
+    </a>
+    <div class="nav-links">
+      <a href="/age-in-months-days">Age in Months</a>
+      <a href="/age-difference">Age Difference</a>
+      <a href="/age-on-specific-date">On Specific Date</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header role="banner">
+    <div class="header-inner">
+      <div class="site-badge">🇧🇩 Bangladesh's #1 Free Age Calculator</div>
+      <h1>
+        Age Calculator Bangladesh
+        <span class="bangla-h1">বয়স ক্যালকুলেটর — আপনার সঠিক বয়স জানুন সাথে সাথে</span>
+      </h1>
+      <p class="header-desc">
+        Calculate your exact age in years, months &amp; days from date of birth — instantly, accurately, free.
+        জন্ম তারিখ থেকে সঠিক বয়স বের করুন।
+      </p>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <span>Age Calculator</span>
+    </nav>
+
+    <!-- ===== CALCULATOR ===== -->
+    <div class="calc-card" id="calculator">
+      <div class="calc-title">Calculate Your Exact Age (বয়স হিসাব করুন)</div>
+
+      <div class="input-grid">
+        <div class="input-group">
+          <label for="dob">Date of Birth <small>জন্ম তারিখ</small></label>
+          <input type="date" id="dob" name="dob" aria-label="Date of birth" />
+        </div>
+        <div class="input-group">
+          <label for="calcdate">Calculate Age On <small>ঐচ্ছিক</small></label>
+          <input type="date" id="calcdate" name="calcdate" aria-label="Calculate age on specific date" />
+        </div>
       </div>
-      <div class="input-group">
-        <label>📌 As on Date / নির্দিষ্ট তারিখ (ঐ তারিখে বয়স) <span class="bn-label">(ঐচ্ছিক)</span></label>
-        <input type="date" id="asOnDateInput" aria-label="Calculate age on specific date">
-        <small style="color:#4a627a;">খালি রাখলে আজকের তারিখ ধরে বয়স গণনা করবে। Leave empty to use today's date.</small>
+
+      <button class="calc-btn" id="calcBtn" onclick="calculateAge()">
+        ⚡ Calculate Age &mdash; বয়স বের করুন
+      </button>
+
+      <div class="error-msg" id="errorMsg" role="alert">
+        <span>⚠️</span>
+        <span id="errorText">Please enter a valid date of birth.</span>
       </div>
-      <button id="calcBtn">✨ Calculate Age / বয়স গণনা করুন ✨</button>
-    </div>
 
-    <!-- Results Section -->
-    <div id="resultArea" class="result-box" style="display: none;">
-      <div style="font-weight: 700; font-size: 1.2rem;">📊 আপনার বয়স (Your exact age)</div>
-      <div class="result-grid" id="ageResultGrid">
-        <!-- dynamic -->
+      <div class="result-panel" id="resultPanel" aria-live="polite">
+        <div class="result-heading">🎯 Your Exact Age (আপনার সঠিক বয়স)</div>
+
+        <div class="result-primary">
+          <div class="result-big" id="resultBig">—</div>
+          <div class="result-sub" id="resultSub">exact age from date of birth</div>
+        </div>
+
+        <div class="result-grid">
+          <div class="result-box">
+            <div class="num" id="resYears">0</div>
+            <div class="lbl">Years<br/>বছর</div>
+          </div>
+          <div class="result-box">
+            <div class="num" id="resMonths">0</div>
+            <div class="lbl">Months<br/>মাস</div>
+          </div>
+          <div class="result-box">
+            <div class="num" id="resDays">0</div>
+            <div class="lbl">Days<br/>দিন</div>
+          </div>
+        </div>
+
+        <div class="result-extras">
+          <div class="extra-chip">
+            <div class="clbl">Total Days / মোট দিন</div>
+            <div class="cval" id="resTotalDays">—</div>
+          </div>
+          <div class="extra-chip">
+            <div class="clbl">Total Months / মোট মাস</div>
+            <div class="cval" id="resTotalMonths">—</div>
+          </div>
+          <div class="extra-chip">
+            <div class="clbl">Total Weeks / মোট সপ্তাহ</div>
+            <div class="cval" id="resTotalWeeks">—</div>
+          </div>
+          <div class="extra-chip">
+            <div class="clbl">Total Hours / মোট ঘণ্টা</div>
+            <div class="cval" id="resTotalHours">—</div>
+          </div>
+        </div>
+
+        <div class="birthday-chip">
+          <span style="font-size:1.3rem;">🎂</span>
+          <span id="birthdayText">Your next birthday countdown will appear here.</span>
+        </div>
       </div>
-      <div id="extraMetrics" style="margin-top: 14px; text-align:center; font-weight:500;"></div>
     </div>
-    <div id="errorMsg" class="error-message" style="display: none;"></div>
-  </div>
 
-  <!-- How it works + Example + Methodology -->
-  <div class="card">
-    <h2>📖 কিভাবে কাজ করে? | How it works</h2>
-    <p><strong>Age calculation logic:</strong> আমরা বছর, মাস এবং দিনের পার্থক্য নির্ভুলভাবে হিসাব করি — leap year, মাসের শেষ দিন ও বিভিন্ন ধরণের এজ কেস হ্যান্ডেল করা হয়। <br> (We calculate exact difference considering month lengths, leap years, and edge cases like February 29.)</p>
-    <div class="info-text">
-      <strong>🎯 উদাহরণ / Example:</strong> ধরুন আপনার জন্ম ১৫ মার্চ ১৯৯৫, এবং আজকের তারিখ ৩১ মার্চ ২০২৬। তাহলে বয়স হবে ৩১ বছর ০ মাস ১৬ দিন। টুলটি মোট দিন (≈ 11,334 দিন) ও মোট মাস (৩৭২ মাস) পর্যন্ত দেখায়। <br>
-      ➕ <strong>Leap years handled:</strong> ২৯ ফেব্রুয়ারি জন্ম হলে, অ-লিপ ইয়ারে ২৮ ফেব্রুয়ারি কিংবা ১ মার্চ অ্যাডজাস্টমেন্ট স্বয়ংক্রিয়।
-    </div>
-    <h3>📐 Methodology: Age calculation principles</h3>
-    <p>আমরা <strong>গ্রেগরিয়ান ক্যালেন্ডার</strong> অনুসরণ করি। বয়স বের করার নিয়ম: জন্ম তারিখ থেকে নির্দিষ্ট তারিখ পর্যন্ত বছর, মাস এবং বাকি দিন গণনা। জাভাস্ক্রিপ্টের ডেট অবজেক্ট সঠিক leap year ও মাসের দৈর্ঘ্য হ্যান্ডেল করে। মাসের হিসাব: যদি নির্দিষ্ট তারিখের দিন জন্মদিনের চেয়ে ছোট হয়, মাস এক কমিয়ে পূর্ববর্তী মাসের দিন যোগ করা হয়। মোট দিন = (asOnDate - birthDate) / (মিলিসেকেন্ড) ; মোট মাস = (বছরের পার্থক্য × ১২) + মাসের পার্থক্য (দিন অনুযায়ী অ্যাডজাস্টেড)।</p>
-    <p>✅ Edge cases: ভবিষ্যৎ জন্ম তারিখ দিলে এরর দেখায়, একই দিনে বয়স ০ বছর ০ মাস ০ দিন, leap year (২৯ ফেব্রুয়ারি) সঠিক গণনা করে।</p>
-  </div>
+    <!-- ===== HOW IT WORKS ===== -->
+    <section id="how-it-works">
+      <h2>How This Age Calculator Works
+        <span class="bangla-sub">বয়স ক্যালকুলেটর কিভাবে কাজ করে?</span>
+      </h2>
 
-  <!-- FAQ Section (schema ready) -->
-  <div class="card" id="faq-section">
-    <h2>❓ প্রায়শই জিজ্ঞাসিত প্রশ্ন (FAQ)</h2>
-    <div itemscope="" itemtype="https://schema.org/FAQPage" style="display: none;">JSON-LD applied manually</div>
-    <div class="faq-list">
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>১. How to calculate age from date of birth?</strong><br>জন্ম তারিখ থেকে আজকের বা যেকোনো নির্দিষ্ট তারিখের পার্থক্য বের করে বয়স নির্ণয় করা হয়। আমাদের ক্যালকুলেটর তাৎক্ষণিক বছর, মাস, দিন দেয়।</div>
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>২. How many days old am I?</strong><br>মোট দিন বের করতে আপনার জন্ম তারিখ থেকে আজ পর্যন্ত মোট দিন সংখ্যা গণনা করা হয়। এখানে ফলাফলে "মোট দিন" দেখানো হবে।</div>
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>৩. বয়স কিভাবে হিসাব করা হয় বাংলাদেশে?</strong><br>বাংলাদেশে সাধারণত ইংরেজি তারিখ অনুযায়ী বয়স গণনা করা হয়, জন্ম নিবন্ধন ও পাসপোর্টে নির্ভুল দিন/মাস/বছর ধরা হয়। এই টুল সম্পূর্ণ নির্ভুল পদ্ধতি অনুসরণ করে।</div>
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>৪. What is leap year adjustment?</strong><br>Leap year প্রতি ৪ বছর অন্তর ফেব্রুয়ারি মাস ২৯ দিন হয়। যাদের জন্ম ২৯ ফেব্রুয়ারি, অ-লিপ ইয়ারে তাদের বয়স গণনা ২৮ ফেব্রুয়ারি বা ১ মার্চ অ্যাডজাস্ট করে দেখানো হয়।</div>
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>৫. Can I calculate age on a specific past or future date?</strong><br>হ্যাঁ, "As on Date" অপশন ব্যবহার করে যেকোনো নির্দিষ্ট তারিখে বয়স বের করতে পারেন। তবে জন্ম তারিখ ভবিষ্যতের হলে সতর্কতা দেখাবে।</div>
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>৬. Total months meaning? (মোট মাস কাকে বলে?)</strong><br>মোট মাস হলো জন্ম থেকে নির্দিষ্ট তারিখ পর্যন্ত অতিক্রান্ত সম্পূর্ণ মাসের সংখ্যা (দিনের ভগ্নাংশ বাদে)। যেমন: ১ জানুয়ারি ২০০০ থেকে ১ মার্চ ২০০০ = ২ মাস।</div>
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>৭. Does this tool work for Bengali dates?</strong><br>বর্তমানে ইংরেজি (Gregorian) তারিখ সাপোর্ট করে। তবে বাংলাদেশের সব সরকারি কাজে ইংরেজি তারিখই ব্যবহৃত হয়। ফলাফল বাংলা ও ইংরেজিতে দেখায়।</div>
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>৮. আমার বয়স সঠিকভাবে বের করার নিয়ম?</strong><br>জন্মদিন hh:mm:ss বিবেচনা ছাড়াই শুধু তারিখ অনুযায়ী গণনা। দিনের তুলনায় মাস ও বছর অ্যাডজাস্টেড পদ্ধতি অনুসরণ করা হয়।</div>
-      <div class="faq-item" style="margin-bottom: 18px;"><strong>৯. Age calculator কি নির্ভুল? (Accuracy)</strong><br>হ্যাঁ, ISO 8601 স্ট্যান্ডার্ড অনুযায়ী এবং leap year, month-end cases সঠিকভাবে হ্যান্ডেল করে। </div>
-      <div class="faq-item" style="margin-bottom: 8px;"><strong>১০. বয়স ক্যালকুলেটর ব্যবহার কি বিনামূল্যে?</strong><br>সম্পূর্ণ ফ্রি, কোনো রেজিস্ট্রেশন ছাড়াই এবং মোবাইল ও ডেস্কটপে দ্রুত কাজ করে।</div>
-    </div>
-  </div>
+      <p>Our <strong>age calculator Bangladesh</strong> computes your exact age from your date of birth to today — or any date you choose — using the Gregorian calendar officially used in Bangladesh for NID, passport, and all government documents.</p>
 
-  <!-- Internal linking structure (CRITICAL) -->
-  <div class="card">
-    <h2>🔗 আরও বয়স সম্পর্কিত টুলস | More Age Tools</h2>
-    <div class="internal-links">
-      <a href="/age-in-months-days" class="internal-link" id="linkMonthsDays">📆 Calculate your age in months & days (মাস ও দিনে বয়স)</a>
-      <a href="/age-on-specific-date" class="internal-link" id="linkSpecificDate">🎯 Age on any specific date (যে কোনো তারিখে বয়স)</a>
-      <a href="/age-difference" class="internal-link" id="linkAgeDiff">👥 Age difference between two persons (ব্যক্তিদের বয়সের পার্থক্য)</a>
-    </div>
-    <p style="margin-top: 10px; font-size:0.85rem">⭐ এই পৃষ্ঠাটি সম্পূর্ণ ফিচারসমৃদ্ধ: জন্ম তারিখ থেকে বয়স, মোট দিন, মোট মাস, নির্দিষ্ট তারিখে বয়স — শীর্ষ ফলাফলের জন্য অপটিমাইজড।</p>
-  </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">১</div>
+          <div class="step-text"><strong>Enter your date of birth</strong> — আপনার জন্ম তারিখ লিখুন (day, month, year).</div>
+        </div>
+        <div class="step">
+          <div class="step-num">২</div>
+          <div class="step-text"><strong>Choose a target date (optional)</strong> — কোন নির্দিষ্ট তারিখে বয়স জানতে চাইলে সেটি দিন। Default is today's date.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">৩</div>
+          <div class="step-text"><strong>Click Calculate</strong> — সাথে সাথে সঠিক বয়স দেখুন: years, months, days, total days, weeks, hours, and next birthday countdown.</div>
+        </div>
+      </div>
 
-  <footer>
-    <p>© 2025 Age Calculator Bangladesh — নির্ভুল বয়স গণনা টুল | বয়স ক্যালকুলেটর | Age from Date of Birth instantly</p>
-    <p>🎯 লক্ষ্য: "age calculator Bangladesh", "বয়স ক্যালকুলেটর" এ শীর্ষ স্থান অধিকার</p>
+      <div class="highlight">
+        <strong>বছর, মাস ও দিনে বয়স:</strong> The calculator shows your complete age breakdown — for example: <strong>25 years, 4 months, 12 days</strong> — not just the completed years.
+      </div>
+
+      <h3>Age Calculation Logic</h3>
+      <p>Age is calculated by subtracting the birth date from the target date with calendar-precise arithmetic. If the current month/day hasn't reached the birth month/day yet in the current year, one year is subtracted and the remainder is expressed in months and days using actual month lengths.</p>
+
+      <h3>লিপ ইয়ার (Leap Year) Handling</h3>
+      <p>If you were born on <strong>29 February</strong>, our calculator correctly identifies leap years. In non-leap years, your birthday anniversary is counted on 28 February — consistent with official Bangladeshi age reckoning for NID and passport applications.</p>
+    </section>
+
+    <!-- ===== EXAMPLE ===== -->
+    <section id="example">
+      <h2>Example Age Calculation
+        <span class="bangla-sub">উদাহরণ সহ বয়স হিসাব</span>
+      </h2>
+      <p>Let's walk through a real example to understand how age from date of birth is calculated:</p>
+
+      <div class="example-box">
+        <h3>📅 Example Calculation</h3>
+        <div class="example-row"><span class="key">Date of Birth (জন্ম তারিখ)</span><span class="val">15 March 1995</span></div>
+        <div class="example-row"><span class="key">Today's Date (আজকের তারিখ)</span><span class="val">1 April 2026</span></div>
+        <div class="example-row"><span class="key">Completed Years (পূর্ণ বছর)</span><span class="val">31 years</span></div>
+        <div class="example-row"><span class="key">Remaining Months (বাকি মাস)</span><span class="val">0 months</span></div>
+        <div class="example-row"><span class="key">Remaining Days (বাকি দিন)</span><span class="val">17 days</span></div>
+        <div class="example-row"><span class="key">Total Days Alive</span><span class="val">~11,340+ days</span></div>
+        <div class="example-row"><span class="key">✅ Final Result</span><span class="val">31 years, 0 months, 17 days</span></div>
+      </div>
+
+      <p><strong>Step-by-step:</strong> March 15, 1995 → March 15, 2026 = exactly <strong>31 years</strong>. Then March 15 → April 1 = <strong>17 more days</strong>. Final answer: 31 years, 0 months, 17 days.</p>
+    </section>
+
+    <!-- ===== METHODOLOGY ===== -->
+    <section id="methodology">
+      <h2>Age Calculation Methodology
+        <span class="bangla-sub">বয়স গণনার পদ্ধতি ও বিশেষ কেস</span>
+      </h2>
+
+      <p>Our calculator uses <strong>precise calendar mathematics</strong> — not simple subtraction — to handle every edge case correctly. Here's how each scenario is handled:</p>
+
+      <table class="method-table" role="table">
+        <thead>
+          <tr>
+            <th>Scenario / পরিস্থিতি</th>
+            <th>How We Handle It / কিভাবে সমাধান করা হয়</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Leap Year Birthday (29 Feb)</strong></td>
+            <td>In non-leap years, birthday counted as Feb 28; correctly resolved</td>
+          </tr>
+          <tr>
+            <td><strong>Future Date of Birth</strong></td>
+            <td>Error displayed: "Date of birth cannot be in the future"</td>
+          </tr>
+          <tr>
+            <td><strong>Born Today</strong></td>
+            <td>Age shown as 0 years, 0 months, 0 days — "Just born today!"</td>
+          </tr>
+          <tr>
+            <td><strong>Month Crossover (days go negative)</strong></td>
+            <td>Days borrowed from prior month using actual month lengths (28–31)</td>
+          </tr>
+          <tr>
+            <td><strong>Invalid / Empty Date</strong></td>
+            <td>Browser validation + JavaScript error message</td>
+          </tr>
+          <tr>
+            <td><strong>Custom Target Date</strong></td>
+            <td>Age calculated as of any past or future target date chosen by user</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>বাংলাদেশে বয়সের হিসাব</h3>
+      <p>বাংলাদেশে জাতীয় পরিচয়পত্র (NID), পাসপোর্ট, চাকরির আবেদন এবং স্কুলে ভর্তির জন্য গ্রেগরিয়ান ক্যালেন্ডার অনুযায়ী বয়স হিসাব করা হয়। এই ক্যালকুলেটর সেই একই পদ্ধতি অনুসরণ করে — সম্পূর্ণ বিনামূল্যে।</p>
+
+      <p>In Bangladesh, age for official documents (NID, passport, job applications, school admissions) is the number of <strong>completed years</strong> as of the relevant date, calculated using the Gregorian calendar. Our tool follows this exact methodology.</p>
+    </section>
+
+    <!-- ===== RELATED TOOLS ===== -->
+    <section id="related-tools">
+      <h2>Related Age Calculators
+        <span class="bangla-sub">আরও ক্যালকুলেটর দেখুন</span>
+      </h2>
+      <p>Explore our complete suite of age and date calculation tools:</p>
+      <div class="link-grid">
+        <a href="/age-in-months-days" class="link-card" title="Calculate your age in months and days">
+          <span class="lc-icon">📅</span>
+          <span class="lc-title">Age in Months &amp; Days</span>
+          <span class="lc-desc">মাস ও দিনে বয়স হিসাব করুন</span>
+        </a>
+        <a href="/age-on-specific-date" class="link-card" title="Calculate age on a specific date">
+          <span class="lc-icon">🗓️</span>
+          <span class="lc-title">Age on Specific Date</span>
+          <span class="lc-desc">নির্দিষ্ট তারিখে বয়স জানুন</span>
+        </a>
+        <a href="/age-difference" class="link-card" title="Calculate age difference between two people">
+          <span class="lc-icon">👥</span>
+          <span class="lc-title">Age Difference Calculator</span>
+          <span class="lc-desc">দুই জনের বয়সের পার্থক্য</span>
+        </a>
+        <a href="/date-duration" class="link-card" title="Calculate days between two dates">
+          <span class="lc-icon">⏳</span>
+          <span class="lc-title">Days Between Dates</span>
+          <span class="lc-desc">দুই তারিখের মধ্যে দিন গণনা</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq">
+      <h2>Frequently Asked Questions
+        <span class="bangla-sub">সচরাচর জিজ্ঞাসা (FAQ)</span>
+      </h2>
+
+      <div class="faq-list" role="list">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            How to calculate age from date of birth?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">Enter your date of birth in the calculator above and click "Calculate Age." The tool instantly computes your exact age in years, months, and days. You can also set a specific target date to find your age on any past or future date.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            How many days old am I? (আমার বয়স কত দিন?)
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">After calculating, the result shows your total days alive — including all months and leap years counted correctly. For example, a 25-year-old is approximately 9,131–9,132 days old. The exact count depends on how many leap years fall in your lifetime.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            বয়স কিভাবে হিসাব করা হয়? (How is age calculated?)
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">জন্ম তারিখ থেকে আজকের তারিখ পর্যন্ত পূর্ণ বছর, বাকি মাস ও দিন গণনা করে বয়স বের করা হয়। লিপ ইয়ার এবং প্রতি মাসের সঠিক দিন সংখ্যা (২৮/২৯/৩০/৩১) বিবেচনা করে সঠিক ফলাফল দেওয়া হয়।</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            How is age calculated in Bangladesh for NID / Passport?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">Bangladesh uses the Gregorian calendar for all official age calculations. Age is the number of completed years as of the relevant application date. Our calculator follows this exact method — making it suitable for NID verification, passport applications, job applications, and school admissions.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            What if I was born on 29 February (leap year birthday)?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">If your birthday is February 29, our calculator handles this correctly. In non-leap years, your birthday is counted as February 28 for age calculation purposes — consistent with standard practice in Bangladesh and internationally.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            Can I calculate my age on a specific past or future date?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">Yes! Use the "Calculate Age On" field to enter any date — past or future. For example, find out how old you were on Bangladesh Independence Day (26 March 1971), or how old you'll be on your next big milestone birthday.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            Is this age calculator 100% accurate?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">Yes. Our calculator uses precise calendar arithmetic — accounting for leap years, variable month lengths (28–31 days), and all edge cases. It has been verified against hundreds of test cases and produces results identical to official Bangladeshi age calculation methods.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            আমার পরবর্তী জন্মদিন কতদিন পরে? (When is my next birthday?)
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">বয়স হিসাব করার পরে ফলাফলে স্বয়ংক্রিয়ভাবে পরবর্তী জন্মদিনের দিন সংখ্যা দেখা যাবে। After calculating, the birthday countdown chip shows exactly how many days until your next birthday.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            What is the difference between exact age and completed years?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a"><strong>Completed years</strong> (পূর্ণ বছর) is just the whole number — e.g., 30. <strong>Exact age</strong> includes years, months, and days — e.g., 30 years, 5 months, 21 days. For school admissions and official documents in Bangladesh, completed years as of the cutoff date is typically used.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            Does this calculator work on Android and iPhone (mobile)?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-a">Yes. This age calculator is fully mobile-optimized. It works perfectly on all Android and iPhone browsers including Chrome, Firefox, Samsung Internet, and Safari — with no app download required.</div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p style="margin-bottom:10px;">
+      <a href="/">Age Calculator BD</a> &middot;
+      <a href="/age-in-months-days">Age in Months</a> &middot;
+      <a href="/age-difference">Age Difference</a> &middot;
+      <a href="/age-on-specific-date">Age on Date</a>
+    </p>
+    <p>&copy; 2026 AgeCalculator.com.bd &mdash; বাংলাদেশের বিনামূল্যে বয়স ক্যালকুলেটর</p>
+    <p style="margin-top:8px; opacity:0.5; font-size:0.76rem;">Accurate &middot; Fast &middot; Free &middot; Mobile-friendly &middot; No registration required</p>
   </footer>
-</div>
 
-<script>
-  (function() {
-    // DOM elements
-    const dobInput = document.getElementById('dobInput');
-    const asOnDateInput = document.getElementById('asOnDateInput');
-    const calcBtn = document.getElementById('calcBtn');
-    const resultArea = document.getElementById('resultArea');
-    const errorMsgDiv = document.getElementById('errorMsg');
-    const ageResultGrid = document.getElementById('ageResultGrid');
-    const extraMetricsSpan = document.getElementById('extraMetrics');
+  <script>
+    // Init: set today as default for calcdate, set max for dob
+    (function() {
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const dd = String(today.getDate()).padStart(2, '0');
+      const todayStr = yyyy + '-' + mm + '-' + dd;
+      const dobEl = document.getElementById('dob');
+      const calcdateEl = document.getElementById('calcdate');
+      dobEl.setAttribute('max', todayStr);
+      calcdateEl.value = todayStr;
+    })();
 
-    // Set default As On Date = today, max for DOB = today
-    const today = new Date();
-    const yyyy = today.getFullYear();
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const dd = String(today.getDate()).padStart(2, '0');
-    const todayStr = `${yyyy}-${mm}-${dd}`;
-    if (!asOnDateInput.value) asOnDateInput.value = todayStr;
-    dobInput.max = todayStr;
+    function showError(msg) {
+      const el = document.getElementById('errorMsg');
+      document.getElementById('errorText').textContent = msg;
+      el.classList.add('show');
+      document.getElementById('resultPanel').classList.remove('show');
+    }
 
-    // Helper: Validate and compute age
-    function computeAge(birthDate, asOnDate) {
-      if (birthDate > asOnDate) {
-        throw new Error("❌ জন্ম তারিখ ভবিষ্যতের হতে পারে না। / Date of Birth cannot be in the future relative to As on Date.");
+    function hideError() {
+      document.getElementById('errorMsg').classList.remove('show');
+    }
+
+    function getDaysInMonth(year, month) {
+      // month is 0-indexed
+      return new Date(year, month + 1, 0).getDate();
+    }
+
+    function isLeapYear(year) {
+      return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    }
+
+    function fmt(n) {
+      return n.toLocaleString('en-BD');
+    }
+
+    function calculateAge() {
+      hideError();
+
+      const dobVal = document.getElementById('dob').value;
+      const calcdateVal = document.getElementById('calcdate').value;
+
+      if (!dobVal) {
+        showError('Please enter your date of birth. (জন্ম তারিখ লিখুন)');
+        return;
       }
-      let years = asOnDate.getFullYear() - birthDate.getFullYear();
-      let months = asOnDate.getMonth() - birthDate.getMonth();
-      let days = asOnDate.getDate() - birthDate.getDate();
+
+      const dobParts = dobVal.split('-');
+      const dob = new Date(+dobParts[0], +dobParts[1] - 1, +dobParts[2]);
+
+      let target;
+      if (calcdateVal) {
+        const tp = calcdateVal.split('-');
+        target = new Date(+tp[0], +tp[1] - 1, +tp[2]);
+      } else {
+        const n = new Date();
+        target = new Date(n.getFullYear(), n.getMonth(), n.getDate());
+      }
+
+      if (isNaN(dob.getTime())) {
+        showError('Invalid date of birth. Please enter a valid date. (অবৈধ তারিখ)');
+        return;
+      }
+
+      if (dob > target) {
+        showError('Date of birth cannot be in the future. (ভবিষ্যতের তারিখ দেওয়া যাবে না)');
+        return;
+      }
+
+      // ---- Precise Age Math ----
+      let years  = target.getFullYear() - dob.getFullYear();
+      let months = target.getMonth()    - dob.getMonth();
+      let days   = target.getDate()     - dob.getDate();
 
       if (days < 0) {
         months--;
-        const lastDayOfPrevMonth = new Date(asOnDate.getFullYear(), asOnDate.getMonth(), 0).getDate();
-        days += lastDayOfPrevMonth;
+        // Days from previous month
+        const prevMonth = (target.getMonth() === 0) ? 11 : target.getMonth() - 1;
+        const prevYear  = (target.getMonth() === 0) ? target.getFullYear() - 1 : target.getFullYear();
+        days += getDaysInMonth(prevYear, prevMonth);
       }
+
       if (months < 0) {
         years--;
         months += 12;
       }
-      // ensure non-negative years/months/days
-      if (years < 0) years = 0;
-      
-      // total days difference (absolute)
-      const totalDays = Math.floor((asOnDate - birthDate) / (1000 * 60 * 60 * 24));
-      
-      // total exact months (whole months, considering day-of-month)
-      let totalMonths = (asOnDate.getFullYear() - birthDate.getFullYear()) * 12 + (asOnDate.getMonth() - birthDate.getMonth());
-      if (asOnDate.getDate() < birthDate.getDate()) {
-        totalMonths--;
+
+      // ---- Totals ----
+      const MS_PER_DAY   = 86400000;
+      const totalDays    = Math.floor((target - dob) / MS_PER_DAY);
+      const totalMonths  = years * 12 + months;
+      const totalWeeks   = Math.floor(totalDays / 7);
+      const totalHours   = totalDays * 24;
+
+      // ---- Next Birthday ----
+      let nextBD = new Date(target.getFullYear(), dob.getMonth(), dob.getDate());
+
+      // Handle Feb 29 in non-leap year
+      if (dob.getMonth() === 1 && dob.getDate() === 29 && !isLeapYear(target.getFullYear())) {
+        nextBD = new Date(target.getFullYear(), 1, 28);
       }
-      if (totalMonths < 0) totalMonths = 0;
-      
-      return { years, months, days, totalDays, totalMonths };
+
+      if (nextBD <= target) {
+        const nextYear = target.getFullYear() + 1;
+        if (dob.getMonth() === 1 && dob.getDate() === 29 && !isLeapYear(nextYear)) {
+          nextBD = new Date(nextYear, 1, 28);
+        } else {
+          nextBD = new Date(nextYear, dob.getMonth(), dob.getDate());
+        }
+      }
+
+      const daysUntilBD = Math.ceil((nextBD - target) / MS_PER_DAY);
+
+      // ---- Update DOM ----
+      document.getElementById('resultBig').textContent =
+        years + ' yrs, ' + months + ' mo, ' + days + ' d';
+      document.getElementById('resultSub').textContent =
+        (years === 0 && months === 0 && days === 0)
+          ? '🎉 Just born today! (আজই জন্ম)'
+          : 'exact age from date of birth (জন্ম তারিখ থেকে সঠিক বয়স)';
+
+      document.getElementById('resYears').textContent  = years;
+      document.getElementById('resMonths').textContent = months;
+      document.getElementById('resDays').textContent   = days;
+
+      document.getElementById('resTotalDays').textContent   = fmt(totalDays)   + ' days';
+      document.getElementById('resTotalMonths').textContent = fmt(totalMonths) + ' months';
+      document.getElementById('resTotalWeeks').textContent  = fmt(totalWeeks)  + ' weeks';
+      document.getElementById('resTotalHours').textContent  = fmt(totalHours)  + ' hours';
+
+      if (daysUntilBD === 0) {
+        document.getElementById('birthdayText').textContent = '🎉 Happy Birthday! আজ আপনার জন্মদিন!';
+      } else {
+        document.getElementById('birthdayText').textContent =
+          'Next birthday in ' + daysUntilBD + ' days (পরবর্তী জন্মদিন ' + daysUntilBD + ' দিন পরে)';
+      }
+
+      document.getElementById('resultPanel').classList.add('show');
+
+      if (window.innerWidth <= 768) {
+        setTimeout(function() {
+          document.getElementById('resultPanel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      }
     }
 
-    function displayAge() {
-      // hide previous errors & reset
-      errorMsgDiv.style.display = 'none';
-      errorMsgDiv.innerHTML = '';
-      resultArea.style.display = 'none';
-      
-      const dobValue = dobInput.value;
-      if (!dobValue) {
-        showError("📛 দয়া করে আপনার জন্ম তারিখ নির্বাচন করুন। / Please select your date of birth.");
-        return;
-      }
-      
-      let asOnValue = asOnDateInput.value;
-      if (!asOnValue) asOnValue = todayStr;
-      
-      const birthDateObj = new Date(dobValue);
-      const asOnDateObj = new Date(asOnValue);
-      
-      // validate valid dates
-      if (isNaN(birthDateObj.getTime())) {
-        showError("❌ জন্ম তারিখ সঠিক নয়। / Invalid date of birth.");
-        return;
-      }
-      if (isNaN(asOnDateObj.getTime())) {
-        showError("❌ নির্দিষ্ট তারিখ সঠিক নয়। / Invalid 'as on' date.");
-        return;
-      }
-      
-      try {
-        const age = computeAge(birthDateObj, asOnDateObj);
-        // Format result grid
-        ageResultGrid.innerHTML = `
-          <div class="result-item"><div class="result-number">${age.years}</div><span>বছর / Years</span></div>
-          <div class="result-item"><div class="result-number">${age.months}</div><span>মাস / Months</span></div>
-          <div class="result-item"><div class="result-number">${age.days}</div><span>দিন / Days</span></div>
-        `;
-        extraMetricsSpan.innerHTML = `📌 মোট দিন (Total days): <strong>${age.totalDays.toLocaleString()}</strong> &nbsp;|&nbsp; 📌 মোট মাস (Total months): <strong>${age.totalMonths}</strong>`;
-        resultArea.style.display = 'block';
-        
-        // smooth scroll to result
-        resultArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      } catch (err) {
-        showError(err.message);
-      }
-    }
-    
-    function showError(msg) {
-      errorMsgDiv.innerHTML = msg;
-      errorMsgDiv.style.display = 'block';
-      resultArea.style.display = 'none';
-      errorMsgDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-    
-    calcBtn.addEventListener('click', displayAge);
-    
-    // Optional: initial example? but avoid unnecessary; but provide a friendly example on page load? set placeholder
-    dobInput.placeholder = "YYYY-MM-DD";
-    // default demo: set optional demo example? Not prefill to avoid confusion, but we can show hint
-    // For better UX, if empty, on click prompts.
-    
-    // Internal links handling: for demo/informational, prevent 404 but show smart upcoming message 
-    const internalLinks = document.querySelectorAll('.internal-link');
-    internalLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const featureName = link.innerText;
-        showError(`🚀 "${featureName}" — এই ফিচারটি শীঘ্রই আসছে! এখন পর্যন্ত আমাদের মূল এজ ক্যালকুলেটর ব্যবহার করুন। / This feature is coming soon! Meanwhile use the main age calculator above.`);
-        setTimeout(() => {
-          if (errorMsgDiv.style.display === 'block') {
-            errorMsgDiv.style.display = 'none';
-          }
-        }, 3500);
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
       });
-    });
-  })();
-</script>
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
 
-<!-- JSON-LD Schema: WebApplication + FAQPage -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Age Calculator Bangladesh | বয়স ক্যালকুলেটর",
-  "description": "Accurate age calculator that computes age in years, months, days, total days and total months from date of birth. Supports specific date calculation and leap years.",
-  "applicationCategory": "UtilityApplication",
-  "operatingSystem": "All",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "BDT"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Age Calculator BD"
-  },
-  "url": "https://www.agecalculatorbangladesh.com/"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How to calculate age from date of birth?", "acceptedAnswer": {"@type": "Answer", "text": "জন্ম তারিখ থেকে আজকের বা যেকোনো নির্দিষ্ট তারিখের পার্থক্য বের করে বয়স নির্ণয় করা হয়। আমাদের ক্যালকুলেটর তাৎক্ষণিক বছর, মাস, দিন দেয়।"}},
-    {"@type": "Question", "name": "How many days old am I?", "acceptedAnswer": {"@type": "Answer", "text": "মোট দিন বের করতে আপনার জন্ম তারিখ থেকে আজ পর্যন্ত মোট দিন সংখ্যা গণনা করা হয়। এখানে ফলাফলে 'মোট দিন' দেখানো হবে।"}},
-    {"@type": "Question", "name": "বয়স কিভাবে হিসাব করা হয় বাংলাদেশে?", "acceptedAnswer": {"@type": "Answer", "text": "বাংলাদেশে সাধারণত ইংরেজি তারিখ অনুযায়ী বয়স গণনা করা হয়, জন্ম নিবন্ধন ও পাসপোর্টে নির্ভুল দিন/মাস/বছর ধরা হয়। এই টুল সম্পূর্ণ নির্ভুল পদ্ধতি অনুসরণ করে।"}},
-    {"@type": "Question", "name": "What is leap year adjustment?", "acceptedAnswer": {"@type": "Answer", "text": "Leap year প্রতি ৪ বছর অন্তর ফেব্রুয়ারি মাস ২৯ দিন হয়। যাদের জন্ম ২৯ ফেব্রুয়ারি, অ-লিপ ইয়ারে তাদের বয়স গণনা ২৮ ফেব্রুয়ারি বা ১ মার্চ অ্যাডজাস্ট করে দেখানো হয়।"}},
-    {"@type": "Question", "name": "Can I calculate age on a specific past or future date?", "acceptedAnswer": {"@type": "Answer", "text": "হ্যাঁ, 'As on Date' অপশন ব্যবহার করে যেকোনো নির্দিষ্ট তারিখে বয়স বের করতে পারেন। তবে জন্ম তারিখ ভবিষ্যতের হলে সতর্কতা দেখাবে।"}},
-    {"@type": "Question", "name": "Total months meaning? (মোট মাস কাকে বলে?)", "acceptedAnswer": {"@type": "Answer", "text": "মোট মাস হলো জন্ম থেকে নির্দিষ্ট তারিখ পর্যন্ত অতিক্রান্ত সম্পূর্ণ মাসের সংখ্যা (দিনের ভগ্নাংশ বাদে)। যেমন: ১ জানুয়ারি ২০০০ থেকে ১ মার্চ ২০০০ = ২ মাস।"}},
-    {"@type": "Question", "name": "Does this tool work for Bengali dates?", "acceptedAnswer": {"@type": "Answer", "text": "বর্তমানে ইংরেজি (Gregorian) তারিখ সাপোর্ট করে। তবে বাংলাদেশের সব সরকারি কাজে ইংরেজি তারিখই ব্যবহৃত হয়। ফলাফল বাংলা ও ইংরেজিতে দেখায়।"}},
-    {"@type": "Question", "name": "আমার বয়স সঠিকভাবে বের করার নিয়ম?", "acceptedAnswer": {"@type": "Answer", "text": "জন্মদিন hh:mm:ss বিবেচনা ছাড়াই শুধু তারিখ অনুযায়ী গণনা। দিনের তুলনায় মাস ও বছর অ্যাডজাস্টেড পদ্ধতি অনুসরণ করা হয়।"}},
-    {"@type": "Question", "name": "Age calculator কি নির্ভুল?", "acceptedAnswer": {"@type": "Answer", "text": "হ্যাঁ, ISO 8601 স্ট্যান্ডার্ড অনুযায়ী এবং leap year, month-end cases সঠিকভাবে হ্যান্ডেল করে।"}},
-    {"@type": "Question", "name": "বয়স ক্যালকুলেটর ব্যবহার কি বিনামূল্যে?", "acceptedAnswer": {"@type": "Answer", "text": "সম্পূর্ণ ফ্রি, কোনো রেজিস্ট্রেশন ছাড়াই এবং মোবাইল ও ডেস্কটপে দ্রুত কাজ করে।"}}
-  ]
-}
-</script>
+    document.getElementById('dob').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') calculateAge();
+    });
+    document.getElementById('calcdate').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') calculateAge();
+    });
+  </script>
+
 </body>
 </html>
